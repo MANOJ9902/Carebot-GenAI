@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGenieAI</title>
+    <style>
+        body {
+            background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjg3MC10YW5nLTMzXzEuanBn.jpg); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #chat-container {
+            max-width: 600px;
+            margin: auto;
+            border: 2px solid #4CAF50; /* Updated border color */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+        }
+
+        .user-message, .bot-message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .user-message img, .bot-message img {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .user-message {
+            background-color: #e0f7fa;
+            text-align: right;
+        }
+
+        .bot-message {
+            background-color: #c8e6c9;
+        }
+
+        #user-input {
+            width: 70%; /* Increased the input width */
+            padding: 15px; /* Increased the input padding */
+            margin-top: 10px;
+            border: 1px solid #ccc; /* Decreased the border size */
+            border-radius: 5px;
+        }
+
+        #chatbot-name {
+            text-align: center;
+            color: #4CAF50; /* Chatbot name color */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chatbot-name">HealthGenieAI</div> <!-- Chatbot name -->
+        <div id="chat-display"></div>
+        <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKeyPress(event)">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userMessage = document.getElementById("user-input").value;
+            document.getElementById("chat-display").innerHTML += "<div class='user-message'><img src='https://cdn.icon-icons.com/icons2/1860/PNG/512/man16_117994.png' alt='User Icon'>" + userMessage + "</div>";
+
+            fetch("/get_response", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: "user_message=" + userMessage,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    var botResponse = data.bot_response;
+                    document.getElementById("chat-display").innerHTML += "<div class='bot-message'><img src='https://img.freepik.com/premium-vector/medical-robot-android_111928-2.jpg' alt='Bot Icon'>" + botResponse + "</div>";
+                });
+
+            document.getElementById("user-input").value = "";
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+    </script>
+</body>
+</html>
