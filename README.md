@@ -12,6 +12,7 @@ Objectives:
 
    
 •	Provide instant and reliable information on various health topics.
+
 •	Offer guidance on symptoms, medications, and general wellness practices.
 
 
@@ -19,12 +20,14 @@ Objectives:
 
    
 •	Create a chatbot that is available round the clock to assist users.
+
 •	Ensure timely responses to health-related queries.
 
 **3.	Personalized Health Support:**
 
    
 •	Implement a personalized approach, considering individual health profiles.
+
 •	Provide tailored advice based on user input and historical health data.
 
 
@@ -35,13 +38,15 @@ Objectives:
 
    
 •	Utilize NLP techniques to understand and interpret user queries effectively.
+
 •	Implement sentiment analysis for empathetic responses.
 
 
 **2.	Machine Learning Models:**
 
    
-•	Train machine learning models to improve the accuracy of medical information provided.
+•	Train machine learning models to improve the accuracy of medical information provided
+.
 •	Incorporate user feedback to continuously enhance the chatbot's capabilities.
 
 
@@ -49,6 +54,7 @@ Objectives:
 
    
 •	Integrate the chatbot with reputable healthcare databases to ensure access to up-to-date medical information.
+
 •	Ensure compliance with data privacy and security standards.
 
 
@@ -75,9 +81,15 @@ Objectives:
 
 
 •	Integrate features to schedule medical appointments or consultations.
-Additional Details:
+
+**Additional Details:**
+
+
 •	User-Friendly Interface: The chatbot will have an intuitive and user-friendly interface to ensure seamless interaction.
+
 •	Continuous Improvement: Regular updates and improvements based on user feedback and advancements in healthcare.
+
 •	Data Security: Prioritize user data security and privacy, adhering to industry standards.
+
 •	Collaboration with Healthcare Professionals: Explore opportunities for collaboration with healthcare professionals for expert advice.
 
