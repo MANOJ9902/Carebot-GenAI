@@ -93,3 +93,36 @@ Objectives:
 
 •	Collaboration with Healthcare Professionals: Explore opportunities for collaboration with healthcare professionals for expert advice.
 
+**** The frameworks and tools that might be utilized in the HealthGenieAI project:****
+
+**Natural Language Processing (NLP):**
+
+Framework: spaCy, NLTK (Natural Language Toolkit)
+
+Tool: TensorFlow for NLP tasks, such as sentiment analysis
+
+**Machine Learning Models:**
+
+Framework: TensorFlow, scikit-learn
+
+Tool: Keras for building and training machine learning models
+
+**User Interface:**
+
+Framework: HTML, CSS, JavaScript (for frontend development)
+
+Tool: React.js or Vue.js for building interactive and dynamic user interfaces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
