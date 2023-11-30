@@ -93,7 +93,7 @@ Objectives:
 
 •	Collaboration with Healthcare Professionals: Explore opportunities for collaboration with healthcare professionals for expert advice.
 
-**** The frameworks and tools that might be utilized in the HealthGenieAI project:****
+ **The frameworks and tools that might be utilized in the HealthGenieAI project:**
 
 **Natural Language Processing (NLP):**
 
@@ -114,7 +114,7 @@ Framework: HTML, CSS, JavaScript (for frontend development)
 Tool: React.js or Vue.js for building interactive and dynamic user interfaces
 
 
-
+VIDEO LINK:https://youtu.be/xX0Lx7W4rik?si=RyR2yabvmPUYBoj6
 
 
 
